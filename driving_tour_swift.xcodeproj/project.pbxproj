@@ -3,24 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D1D2249CDA00027338A /* AppDelegate.swift */; };
-		31B10D202249CDA00027338A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D1F2249CDA00027338A /* ViewController.swift */; };
 		31B10D252249CDA10027338A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B10D242249CDA10027338A /* Assets.xcassets */; };
-		31B10D282249CDA10027338A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B10D262249CDA10027338A /* LaunchScreen.storyboard */; };
+		31B10D332249F9580027338A /* KConstantDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D322249F9580027338A /* KConstantDefine.swift */; };
+		31B10D372249FCE10027338A /* ZJYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D362249FCE10027338A /* ZJYBaseViewController.swift */; };
+		31B10D392249FD510027338A /* ZJYBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D382249FD510027338A /* ZJYBaseModel.swift */; };
+		31B10D422249FF210027338A /* ZJYHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D412249FF210027338A /* ZJYHomeVC.swift */; };
+		31B10D442249FF710027338A /* ZJYFindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D432249FF710027338A /* ZJYFindVC.swift */; };
+		31B10D462249FF8A0027338A /* ZJYOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D452249FF8A0027338A /* ZJYOrderVC.swift */; };
+		31B10D482249FF990027338A /* ZJYMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D472249FF990027338A /* ZJYMyVC.swift */; };
+		31B10D4A224A01540027338A /* ZJYTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D49224A01540027338A /* ZJYTabbarVC.swift */; };
 		F0DD38DFDF3C82BDE96FB415 /* Pods_driving_tour_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E5C581791EED223C0BAB14 /* Pods_driving_tour_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31B10D1A2249CDA00027338A /* driving_tour_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driving_tour_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B10D1D2249CDA00027338A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31B10D1F2249CDA00027338A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31B10D242249CDA10027338A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		31B10D272249CDA10027338A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31B10D292249CDA10027338A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B10D2F2249F6600027338A /* driving_tour_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "driving_tour_swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		31B10D322249F9580027338A /* KConstantDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KConstantDefine.swift; sourceTree = "<group>"; };
+		31B10D362249FCE10027338A /* ZJYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYBaseViewController.swift; sourceTree = "<group>"; };
+		31B10D382249FD510027338A /* ZJYBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYBaseModel.swift; sourceTree = "<group>"; };
+		31B10D412249FF210027338A /* ZJYHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYHomeVC.swift; sourceTree = "<group>"; };
+		31B10D432249FF710027338A /* ZJYFindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYFindVC.swift; sourceTree = "<group>"; };
+		31B10D452249FF8A0027338A /* ZJYOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYOrderVC.swift; sourceTree = "<group>"; };
+		31B10D472249FF990027338A /* ZJYMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMyVC.swift; sourceTree = "<group>"; };
+		31B10D49224A01540027338A /* ZJYTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYTabbarVC.swift; sourceTree = "<group>"; };
 		5D43ABE7DAABB3234C488652 /* Pods-driving_tour_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driving_tour_swift.release.xcconfig"; path = "Target Support Files/Pods-driving_tour_swift/Pods-driving_tour_swift.release.xcconfig"; sourceTree = "<group>"; };
 		76E5C581791EED223C0BAB14 /* Pods_driving_tour_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_driving_tour_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD0D7EA93ABF61821E61025 /* Pods-driving_tour_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-driving_tour_swift.debug.xcconfig"; path = "Target Support Files/Pods-driving_tour_swift/Pods-driving_tour_swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,12 +81,91 @@
 			isa = PBXGroup;
 			children = (
 				31B10D1D2249CDA00027338A /* AppDelegate.swift */,
-				31B10D1F2249CDA00027338A /* ViewController.swift */,
-				31B10D242249CDA10027338A /* Assets.xcassets */,
-				31B10D262249CDA10027338A /* LaunchScreen.storyboard */,
-				31B10D292249CDA10027338A /* Info.plist */,
+				31B10D3C2249FD710027338A /* New Group2 */,
+				31B10D3B2249FD6E0027338A /* New Group1 */,
+				31B10D3A2249FD6B0027338A /* UI */,
+				31B10D352249FC7C0027338A /* Base */,
+				31B10D342249FC020027338A /* app support */,
 			);
 			path = driving_tour_swift;
+			sourceTree = "<group>";
+		};
+		31B10D342249FC020027338A /* app support */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D2F2249F6600027338A /* driving_tour_swift-Bridging-Header.h */,
+				31B10D322249F9580027338A /* KConstantDefine.swift */,
+				31B10D242249CDA10027338A /* Assets.xcassets */,
+				31B10D292249CDA10027338A /* Info.plist */,
+			);
+			path = "app support";
+			sourceTree = "<group>";
+		};
+		31B10D352249FC7C0027338A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D362249FCE10027338A /* ZJYBaseViewController.swift */,
+				31B10D382249FD510027338A /* ZJYBaseModel.swift */,
+				31B10D49224A01540027338A /* ZJYTabbarVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		31B10D3A2249FD6B0027338A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D3D2249FDCA0027338A /* Home */,
+				31B10D402249FDE90027338A /* Find */,
+				31B10D3F2249FDE70027338A /* Order */,
+				31B10D3E2249FDE30027338A /* My */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		31B10D3B2249FD6E0027338A /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		31B10D3C2249FD710027338A /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		31B10D3D2249FDCA0027338A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D412249FF210027338A /* ZJYHomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		31B10D3E2249FDE30027338A /* My */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D472249FF990027338A /* ZJYMyVC.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		31B10D3F2249FDE70027338A /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D452249FF8A0027338A /* ZJYOrderVC.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		31B10D402249FDE90027338A /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				31B10D432249FF710027338A /* ZJYFindVC.swift */,
+			);
+			path = Find;
 			sourceTree = "<group>";
 		};
 		8054B7CB69941F6ABAEBDD53 /* Pods */ = {
@@ -82,7 +174,6 @@
 				BDD0D7EA93ABF61821E61025 /* Pods-driving_tour_swift.debug.xcconfig */,
 				5D43ABE7DAABB3234C488652 /* Pods-driving_tour_swift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +211,7 @@
 				TargetAttributes = {
 					31B10D192249CDA00027338A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -146,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B10D282249CDA10027338A /* LaunchScreen.storyboard in Resources */,
 				31B10D252249CDA10027338A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,23 +291,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B10D202249CDA00027338A /* ViewController.swift in Sources */,
+				31B10D442249FF710027338A /* ZJYFindVC.swift in Sources */,
+				31B10D332249F9580027338A /* KConstantDefine.swift in Sources */,
+				31B10D372249FCE10027338A /* ZJYBaseViewController.swift in Sources */,
+				31B10D482249FF990027338A /* ZJYMyVC.swift in Sources */,
 				31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */,
+				31B10D462249FF8A0027338A /* ZJYOrderVC.swift in Sources */,
+				31B10D392249FD510027338A /* ZJYBaseModel.swift in Sources */,
+				31B10D4A224A01540027338A /* ZJYTabbarVC.swift in Sources */,
+				31B10D422249FF210027338A /* ZJYHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		31B10D262249CDA10027338A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31B10D272249CDA10027338A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		31B10D2A2249CDA10027338A /* Debug */ = {
@@ -340,9 +427,11 @@
 			baseConfigurationReference = BDD0D7EA93ABF61821E61025 /* Pods-driving_tour_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
-				INFOPLIST_FILE = driving_tour_swift/Info.plist;
+				INFOPLIST_FILE = "driving_tour_swift/app support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,6 +439,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FanKD.www.driving-tour-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "driving_tour_swift/app support/driving_tour_swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -360,9 +451,11 @@
 			baseConfigurationReference = 5D43ABE7DAABB3234C488652 /* Pods-driving_tour_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
-				INFOPLIST_FILE = driving_tour_swift/Info.plist;
+				INFOPLIST_FILE = "driving_tour_swift/app support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,6 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FanKD.www.driving-tour-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "driving_tour_swift/app support/driving_tour_swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
