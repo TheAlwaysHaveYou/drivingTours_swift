@@ -13,7 +13,38 @@ import Kingfisher
 import Alamofire
 
 let kSCREEN_WIDTH  = UIScreen.main.bounds.size.width
-let KSCREEN_HEIGHT = UIScreen.main.bounds.size.width
+let KSCREEN_HEIGHT = UIScreen.main.bounds.size.height
+
+let kStateBarHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height
+
+let iPhoneX_:Bool = {
+    if KSCREEN_HEIGHT>=812 {
+        return true
+    }else {
+        return false
+    }
+}()
+
+let kNavBarHeight:CGFloat = {
+    if iPhoneX_ {
+        return 88
+    }else {
+        return 64
+    }
+}()
+
+let kTabBarHeight:CGFloat = {
+    if iPhoneX_ {
+        return 83
+    }else {
+        return 49
+    }
+}()
+
+let app_Name:String        = Bundle.main.infoDictionary?["CFBundleName"] as! String
+let app_Version:String     = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+let app_Identifier:String  = Bundle.main.infoDictionary?["CFBundleIdentifier"] as! String
+let app_DisplayName:String = Bundle.main.infoDictionary?["CFBundleDisplayName"] as! String
 
 let color_navbar          = UIColor.white
 let color_otherMain       = UIColor.init(hexString: "#666666")!

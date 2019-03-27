@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319DEDB6224B14CC0092641B /* ZJYMySetUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */; };
+		319DEDBD224B790F0092641B /* ZJYNetRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DEDBC224B790F0092641B /* ZJYNetRequestManager.swift */; };
 		31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D1D2249CDA00027338A /* AppDelegate.swift */; };
 		31B10D252249CDA10027338A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B10D242249CDA10027338A /* Assets.xcassets */; };
 		31B10D332249F9580027338A /* KConstantDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D322249F9580027338A /* KConstantDefine.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMySetUpVC.swift; sourceTree = "<group>"; };
+		319DEDBC224B790F0092641B /* ZJYNetRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYNetRequestManager.swift; sourceTree = "<group>"; };
 		31B10D1A2249CDA00027338A /* driving_tour_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driving_tour_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B10D1D2249CDA00027338A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B10D242249CDA10027338A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +61,13 @@
 				76E5C581791EED223C0BAB14 /* Pods_driving_tour_swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		319DEDB7224B250D0092641B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		31B10D112249CDA00027338A = {
@@ -107,6 +118,7 @@
 				31B10D362249FCE10027338A /* ZJYBaseViewController.swift */,
 				31B10D382249FD510027338A /* ZJYBaseModel.swift */,
 				31B10D49224A01540027338A /* ZJYTabbarVC.swift */,
+				319DEDBC224B790F0092641B /* ZJYNetRequestManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -148,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				31B10D472249FF990027338A /* ZJYMyVC.swift */,
+				319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */,
+				319DEDB7224B250D0092641B /* View */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -293,12 +307,14 @@
 			files = (
 				31B10D442249FF710027338A /* ZJYFindVC.swift in Sources */,
 				31B10D332249F9580027338A /* KConstantDefine.swift in Sources */,
+				319DEDBD224B790F0092641B /* ZJYNetRequestManager.swift in Sources */,
 				31B10D372249FCE10027338A /* ZJYBaseViewController.swift in Sources */,
 				31B10D482249FF990027338A /* ZJYMyVC.swift in Sources */,
 				31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */,
 				31B10D462249FF8A0027338A /* ZJYOrderVC.swift in Sources */,
 				31B10D392249FD510027338A /* ZJYBaseModel.swift in Sources */,
 				31B10D4A224A01540027338A /* ZJYTabbarVC.swift in Sources */,
+				319DEDB6224B14CC0092641B /* ZJYMySetUpVC.swift in Sources */,
 				31B10D422249FF210027338A /* ZJYHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

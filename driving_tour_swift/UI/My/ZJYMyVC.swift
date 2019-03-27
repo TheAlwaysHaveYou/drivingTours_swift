@@ -22,6 +22,9 @@ class ZJYMyVC: ZJYBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationBarHide = true
+        
+        self.setupUI()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -46,6 +49,17 @@ class ZJYMyVC: ZJYBaseViewController {
     //MARK: - Public
     
     //MARK: - Private
+    func setupUI() -> () {
+        let btn = UIButton.init(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        btn.backgroundColor = UIColor.red
+        btn.addTarget(self, action: #selector(gogogogog), for: .touchUpInside)
+        self.view.addSubview(btn)
+    }
+    @objc func gogogogog() -> () {
+        let vc = ZJYMySetUpVC()
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     //MARK: - Procotol
     
