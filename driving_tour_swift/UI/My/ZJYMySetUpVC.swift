@@ -46,7 +46,7 @@ class ZJYMySetUpVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSou
         
     }
     deinit {
-        print("---\(self.className())---")
+        print("---\(self.classForCoder)---")
     }
     
     //MARK: - Public

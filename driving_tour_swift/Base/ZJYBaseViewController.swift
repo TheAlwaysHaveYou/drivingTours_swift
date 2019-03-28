@@ -47,7 +47,7 @@ class ZJYBaseViewController: UIViewController {
         
     }
 //    deinit {
-//        print("---\(self.className())---释放---")
+//        print("---\(self.classForCoder)---释放---")
 //    }
     
     //MARK: - Public

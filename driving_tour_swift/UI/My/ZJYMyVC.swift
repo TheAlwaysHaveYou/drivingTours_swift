@@ -43,7 +43,7 @@ class ZJYMyVC: ZJYBaseViewController {
         
     }
     deinit {
-        print("---\(self.className())---")
+        print("---\(self.classForCoder)---")
     }
     
     //MARK: - Public

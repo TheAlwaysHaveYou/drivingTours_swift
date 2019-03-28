@@ -47,7 +47,7 @@ class ZJYTabbarVC: UITabBarController {
     }
 
     deinit {
-        print("---\(self.className())---")
+        print("---\(self.classForCoder)---")
     }
     
     //MARK: - Public

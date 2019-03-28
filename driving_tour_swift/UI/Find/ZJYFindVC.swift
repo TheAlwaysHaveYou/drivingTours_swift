@@ -40,7 +40,7 @@ class ZJYFindVC: ZJYBaseViewController {
         
     }
     deinit {
-        print("---\(self.className())---")
+        print("---\(self.classForCoder)---")
     }
     
     //MARK: - Public

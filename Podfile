@@ -12,9 +12,9 @@ target 'driving_tour_swift' do
 	pod 'MBProgressHUD'
 	pod 'YYKit'
 	pod 'Alamofire'
-     	pod 'SnapKit'
-        pod 'RxSwift'    
-        pod 'Kingfisher', '~> 4.2'
-
+  pod 'SnapKit'
+  pod 'RxSwift'
+#        pod 'Kingfisher', '~> 4.2'
+  pod 'Kingfisher'
 end
 
