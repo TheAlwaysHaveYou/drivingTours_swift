@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3101D814224DB37700B8F783 /* ZJYMyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101D813224DB37700B8F783 /* ZJYMyHeaderView.swift */; };
+		3101D816224E06EC00B8F783 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101D815224E06EC00B8F783 /* UIButton+Extension.swift */; };
 		319DEDB6224B14CC0092641B /* ZJYMySetUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */; };
 		319DEDBD224B790F0092641B /* ZJYNetRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DEDBC224B790F0092641B /* ZJYNetRequestManager.swift */; };
 		31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D1D2249CDA00027338A /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3101D813224DB37700B8F783 /* ZJYMyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMyHeaderView.swift; sourceTree = "<group>"; };
+		3101D815224E06EC00B8F783 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMySetUpVC.swift; sourceTree = "<group>"; };
 		319DEDBC224B790F0092641B /* ZJYNetRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYNetRequestManager.swift; sourceTree = "<group>"; };
 		31B10D1A2249CDA00027338A /* driving_tour_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driving_tour_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,7 @@
 		319DEDB7224B250D0092641B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3101D813224DB37700B8F783 /* ZJYMyHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,7 +98,7 @@
 			children = (
 				31B10D1D2249CDA00027338A /* AppDelegate.swift */,
 				31B10D3C2249FD710027338A /* New Group2 */,
-				31B10D3B2249FD6E0027338A /* New Group1 */,
+				31B10D3B2249FD6E0027338A /* Extension */,
 				31B10D3A2249FD6B0027338A /* UI */,
 				31B10D352249FC7C0027338A /* Base */,
 				31B10D342249FC020027338A /* app support */,
@@ -134,11 +139,12 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		31B10D3B2249FD6E0027338A /* New Group1 */ = {
+		31B10D3B2249FD6E0027338A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3101D815224E06EC00B8F783 /* UIButton+Extension.swift */,
 			);
-			path = "New Group1";
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		31B10D3C2249FD710027338A /* New Group2 */ = {
@@ -307,11 +313,13 @@
 			files = (
 				31B10D442249FF710027338A /* ZJYFindVC.swift in Sources */,
 				31B10D332249F9580027338A /* KConstantDefine.swift in Sources */,
+				3101D816224E06EC00B8F783 /* UIButton+Extension.swift in Sources */,
 				319DEDBD224B790F0092641B /* ZJYNetRequestManager.swift in Sources */,
 				31B10D372249FCE10027338A /* ZJYBaseViewController.swift in Sources */,
 				31B10D482249FF990027338A /* ZJYMyVC.swift in Sources */,
 				31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */,
 				31B10D462249FF8A0027338A /* ZJYOrderVC.swift in Sources */,
+				3101D814224DB37700B8F783 /* ZJYMyHeaderView.swift in Sources */,
 				31B10D392249FD510027338A /* ZJYBaseModel.swift in Sources */,
 				31B10D4A224A01540027338A /* ZJYTabbarVC.swift in Sources */,
 				319DEDB6224B14CC0092641B /* ZJYMySetUpVC.swift in Sources */,
