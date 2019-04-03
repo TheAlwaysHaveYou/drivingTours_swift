@@ -14,6 +14,8 @@ class ZJYMyHeaderView: UIView {
 //        fatalError("init(coder:) has not been implemented")
     }
     
+    var callBack : swiftIntBlock?
+    
     var bgImgV = UIImageView()
     var infoView = UIView()
     var headImgV = UIImageView()
@@ -88,6 +90,12 @@ class ZJYMyHeaderView: UIView {
         self.infoView.addSubview(self.loginLabel)
         self.infoView.addSubview(self.vipImgV)
         
+        let infoTap = UITapGestureRecognizer.init(target: self, action: #selector(infoTapGestureClick(tap:)))
+        self.infoView.addGestureRecognizer(infoTap)
+        
+        let vipTap = UITapGestureRecognizer.init(target: self, action: #selector(vipTapGestureClick(tap:)))
+        self.vipImgV.addGestureRecognizer(vipTap)
+        
         self.nameLabel.text = "我的名字"
         self.headImgV.image = IMGNAME(tip: "头像占位")
         self.bgImgV.image = IMGNAME(tip: "icon_beijing")
@@ -112,11 +120,28 @@ class ZJYMyHeaderView: UIView {
                 self.height = btn.bottom
             }
         }
-        
+    }
+    
+    @objc func infoTapGestureClick(tap:UIGestureRecognizer) -> () {
+        if callBack != nil {
+            callBack!(100)
+        }
+    }
+    
+    @objc func vipTapGestureClick(tap:UIGestureRecognizer) -> () {
+        if callBack != nil {
+            callBack!(200)
+        }
     }
     
     @objc func functionButtonClick(sender:UIButton) -> () {
-        
+        if callBack != nil {
+            callBack!(sender.tag)
+        }
+    }
+    
+    open func selectedBlack(block:@escaping swiftIntBlock) -> () {
+        callBack = block
     }
     
     var personInfoModel: ZJYPersonalInfoModel? {

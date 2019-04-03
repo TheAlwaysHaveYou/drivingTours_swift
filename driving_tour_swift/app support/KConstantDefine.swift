@@ -83,3 +83,7 @@ func FitBorderFont(x:CGFloat) -> UIFont {
 func IMGNAME(tip:String) -> UIImage {
     return UIImage.init(named: tip)!
 }
+
+typealias swiftEmptyBlock  = () -> Void
+typealias swiftIntBlock    = (_ callBackInt:Int) -> Void
+typealias swiftStringBlock = (_ callBackString:String) -> Void

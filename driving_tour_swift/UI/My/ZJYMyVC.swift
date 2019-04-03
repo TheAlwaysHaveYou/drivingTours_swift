@@ -58,6 +58,27 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
     func setupUI() -> () {
         self.headerView = ZJYMyHeaderView.init(frame: CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: 0))
         
+        weak var weakSelf = self
+        self.headerView.selectedBlack { (tag) in
+            if tag == 0 {//钱包
+                
+            }else if tag == 1 {//收藏
+                let vc = ZJYMyCollectionVC()
+                vc.hidesBottomBarWhenPushed = true
+                weakSelf?.navigationController?.pushViewController(vc, animated: true)
+            }else if tag == 2 {//开票
+                
+            }else if tag == 100 {//个人中心
+                let vc = ZJYMyPersonInfoVC()
+                vc.hidesBottomBarWhenPushed = true
+                weakSelf?.navigationController?.pushViewController(vc, animated: true)
+            }else if tag == 200 {//vip
+                let vc = ZJYMyVipCenterVC()
+                vc.hidesBottomBarWhenPushed = true
+                weakSelf?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
         self.tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: KSCREEN_HEIGHT-kTabBarHeight), style: .grouped)
         self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorColor = color_grayLine
