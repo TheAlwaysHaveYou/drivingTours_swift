@@ -24,9 +24,6 @@ class ZJYMyHeaderView: UIView {
     var signLabel  = UILabel()
     var loginLabel = UILabel()
     
-    
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -54,7 +51,7 @@ class ZJYMyHeaderView: UIView {
         self.arrowImgV = UIButton.init(frame: CGRect(x: 0, y: 0, width: 6, height: 12))
         self.arrowImgV.right = self.infoView.width-FITSCALE(number: 15)
         self.arrowImgV.centerY = self.headImgV.centerY
-        self.arrowImgV.setImage(IMGNAME(tip: ""), for: .normal)
+        self.arrowImgV.setImage(IMGNAME(tip: "右箭头"), for: .normal)
         
         self.nameLabel = UILabel.init()
         self.nameLabel.font = FitBorderFont(x: big_font)
@@ -92,14 +89,14 @@ class ZJYMyHeaderView: UIView {
         self.infoView.addSubview(self.vipImgV)
         
         self.nameLabel.text = "我的名字"
-        self.headImgV.image = IMGNAME(tip: "")
-        self.bgImgV.image = IMGNAME(tip: "")
+        self.headImgV.image = IMGNAME(tip: "头像占位")
+        self.bgImgV.image = IMGNAME(tip: "icon_beijing")
         
         self.addSubview(self.bgImgV)
         self.addSubview(self.infoView)
         
         let nameArr = ["钱包","收藏","开票"]
-        let imageArr = ["","",""]
+        let imageArr = ["icon_wodeqianabao","icon_shoucang","icon_shenqingkaipiao"]
         for i in 0..<nameArr.count {
             let btn = UIButton.init(frame: CGRect(x: frame.size.width/3*CGFloat(i), y: self.infoView.bottom+5, width: frame.size.width/3, height: (FITSCALE(number: 45))*1.5))
             btn.setTitleColor(color_blackText, for: .normal)
@@ -120,6 +117,19 @@ class ZJYMyHeaderView: UIView {
     
     @objc func functionButtonClick(sender:UIButton) -> () {
         
+    }
+    
+    var personInfoModel: ZJYPersonalInfoModel? {
+        didSet {
+            if personInfoModel == nil {
+                self.loginLabel.isHidden = false
+                self.vipImgV.isHidden = true
+                self.nameLabel.isHidden = true
+                self.headImgV.image = IMGNAME(tip: "头像占位")
+            }else {
+                
+            }
+        }
     }
     
     

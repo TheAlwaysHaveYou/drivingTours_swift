@@ -19,6 +19,8 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    var headerView = ZJYMyHeaderView()
+    
     var tableView = UITableView()
     let titleArr = ["邀请好友","联系客服","设置"]
     let imageArr = ["icon_yaoqinghaoyou","icon_lianxikefu","icon_shezhi"]
@@ -54,6 +56,8 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     //MARK: - Private
     func setupUI() -> () {
+        self.headerView = ZJYMyHeaderView.init(frame: CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: 0))
+        
         self.tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: KSCREEN_HEIGHT-kTabBarHeight), style: .grouped)
         self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorColor = color_grayLine
@@ -63,7 +67,7 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
         }
-        
+        self.tableView.tableHeaderView = self.headerView
         self.view.addSubview(self.tableView)
     }
     
