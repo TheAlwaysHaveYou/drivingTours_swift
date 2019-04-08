@@ -151,12 +151,63 @@ class ZJYMyHeaderView: UIView {
                 self.vipImgV.isHidden = true
                 self.nameLabel.isHidden = true
                 self.headImgV.image = IMGNAME(tip: "头像占位")
-            }else {
                 
+            }else {
+                let maxWidth = self.arrowImgV.left-FITSCALE(number: 10)+FITSCALE(number: 10)-self.headImgV.right-60
+                if ((personInfoModel?.nikeName!.count)! > 0) {
+                    self.nameLabel.text = personInfoModel?.nikeName
+                }else {
+                    if ((GlobalManager.sharedInstance.loginModel?.mobile?.count)! > 10) {
+                       
+                        let start = GlobalManager.sharedInstance.loginModel?.mobile!.index((GlobalManager.sharedInstance.loginModel?.mobile!.startIndex)!, offsetBy: 3)
+                        let end = GlobalManager.sharedInstance.loginModel?.mobile!.index((GlobalManager.sharedInstance.loginModel?.mobile!.startIndex)!, offsetBy: 6)
+                        self.nameLabel.text = GlobalManager.sharedInstance.loginModel?.mobile!.replacingCharacters(in: start!...end!, with: "****")
+                    }else {
+                        self.nameLabel.text = GlobalManager.sharedInstance.loginModel?.mobile
+                    }
+                }
+                
+                self.vipLabel.text = personInfoModel?.vipLevel
+                let width = self.nameLabel.intrinsicContentSize.width
+                let vipWidth = self.vipLabel.intrinsicContentSize.width
+                if width<maxWidth {
+                    self.nameLabel.width = width
+                }else {
+                    self.nameLabel.width = maxWidth
+                }
+                self.vipImgV.image = IMGNAME(tip: "icon_huiyuan").resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 15), resizingMode: .stretch)
+                self.nameLabel.frame = CGRect(x: self.headImgV.right+FITSCALE(number: 10), y: FITSCALE(number: 47), width: self.nameLabel.width, height: FITSCALE(number: 25))
+                self.signLabel.frame = CGRect(x: self.headImgV.right+FITSCALE(number: 10), y: FITSCALE(number: 74), width: self.arrowImgV.left-self.headImgV.right-FITSCALE(number: 10)-FITSCALE(number: 10), height: FITSCALE(number: 20))
+                self.vipImgV.bounds = CGRect(x: 0, y: 0, width: vipWidth+20+20, height: 20)
+                self.vipImgV.left = self.nameLabel.right
+                self.vipImgV.centerY = self.nameLabel.centerY
+                self.vipLabel.bounds = CGRect(x: 0, y: 0, width: vipWidth, height: self.vipImgV.height)
+                self.vipLabel.left = 20+FITSCALE(number: 2)
+                self.vipLabel.top = 0
+                self.signLabel.isHidden = !((personInfoModel?.signature?.count) != nil)
+                if self.signLabel.isHidden {
+                    self.signLabel.text = personInfoModel?.signature
+                }else {
+                    self.nameLabel.centerY = self.headImgV.centerY
+                    self.vipImgV.centerY = self.nameLabel.centerY
+                }
+                self.headImgV.setImageWith(URL(string: personInfoModel!.headerUrl!), placeholder: IMGNAME(tip: "头像占位"))
+                self.loginLabel.isHidden = true
+                self.nameLabel.isHidden = false
+                self.vipLabel.isHidden = false
             }
         }
     }
     
-    
+    var scrollViewOffSet: CGFloat? {
+        didSet {
+            if scrollViewOffSet! < CGFloat(0) {
+                var rect = self.bgImgV.frame
+                rect.origin.y = scrollViewOffSet!
+                rect.size.height = -scrollViewOffSet! + self.width*(220.0/360)
+                self.bgImgV.frame = rect
+            }
+        }
+    }
     
 }

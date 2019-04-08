@@ -87,3 +87,4 @@ func IMGNAME(tip:String) -> UIImage {
 typealias swiftEmptyBlock  = () -> Void
 typealias swiftIntBlock    = (_ callBackInt:Int) -> Void
 typealias swiftStringBlock = (_ callBackString:String) -> Void
+typealias swiftAnyBlock    = (_ callBackAny:Any) -> Void

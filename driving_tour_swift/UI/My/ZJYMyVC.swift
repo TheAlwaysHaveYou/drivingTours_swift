@@ -31,6 +31,10 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
         self.navigationBarHide = true
         
         self.setupUI()
+        
+        HTTPRequestManager.postRequest(url: "http://118.190.206.2:19089/organization/queryValidThemeList", params: nil) { (response, result) in
+            
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -138,6 +142,9 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.headerView.scrollViewOffSet = scrollView.contentOffset.y
     }
     
 }
