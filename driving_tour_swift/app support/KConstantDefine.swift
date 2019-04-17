@@ -88,3 +88,11 @@ typealias swiftEmptyBlock  = () -> Void
 typealias swiftIntBlock    = (_ callBackInt:Int) -> Void
 typealias swiftStringBlock = (_ callBackString:String) -> Void
 typealias swiftAnyBlock    = (_ callBackAny:Any) -> Void
+
+
+func serverBaseURL(add:String) -> String {
+    return "http://118.190.206.2:19089/"+add
+}
+func webBaseURL(add:String) -> String {
+    return "http://web.dev.cs-zjy.com/app/#/"+add
+}

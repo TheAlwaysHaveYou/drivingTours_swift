@@ -22,6 +22,7 @@
 		314585FA2254B9780039272E /* ZJYLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314585F92254B9780039272E /* ZJYLoginModel.swift */; };
 		314585FD2254B9AE0039272E /* ZJYOpenCityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314585FC2254B9AE0039272E /* ZJYOpenCityModel.swift */; };
 		319DEDB6224B14CC0092641B /* ZJYMySetUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */; };
+		31A439A122647B060076ED54 /* ZJYHomeADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A439A022647B060076ED54 /* ZJYHomeADModel.swift */; };
 		31B10D1E2249CDA00027338A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D1D2249CDA00027338A /* AppDelegate.swift */; };
 		31B10D252249CDA10027338A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B10D242249CDA10027338A /* Assets.xcassets */; };
 		31B10D332249F9580027338A /* KConstantDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B10D322249F9580027338A /* KConstantDefine.swift */; };
@@ -51,6 +52,7 @@
 		314585F92254B9780039272E /* ZJYLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYLoginModel.swift; sourceTree = "<group>"; };
 		314585FC2254B9AE0039272E /* ZJYOpenCityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYOpenCityModel.swift; sourceTree = "<group>"; };
 		319DEDB5224B14CC0092641B /* ZJYMySetUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMySetUpVC.swift; sourceTree = "<group>"; };
+		31A439A022647B060076ED54 /* ZJYHomeADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYHomeADModel.swift; sourceTree = "<group>"; };
 		31B10D1A2249CDA00027338A /* driving_tour_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = driving_tour_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B10D1D2249CDA00027338A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B10D242249CDA10027338A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				314585FC2254B9AE0039272E /* ZJYOpenCityModel.swift */,
+				31A439A022647B060076ED54 /* ZJYHomeADModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				314585F72254B9590039272E /* ZJYInitModel.swift in Sources */,
 				3101D816224E06EC00B8F783 /* UIButton+Extension.swift in Sources */,
 				314585F12254999D0039272E /* ZJYMyCollectionVC.swift in Sources */,
+				31A439A122647B060076ED54 /* ZJYHomeADModel.swift in Sources */,
 				31B10D372249FCE10027338A /* ZJYBaseViewController.swift in Sources */,
 				314585FD2254B9AE0039272E /* ZJYOpenCityModel.swift in Sources */,
 				314585F52254AD140039272E /* HTTPRequestManager.swift in Sources */,

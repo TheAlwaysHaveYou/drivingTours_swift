@@ -24,6 +24,16 @@ class ZJYHomeVC: ZJYBaseViewController {
         
         self.title = "首页"
         
+        HTTPRequestManager.originPost(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (data, result) in
+            if result {
+                let data = data as! Data
+                let tempModel = try? JSONDecoder().decode(ZJYHomeADModel.self, from: data)
+                print("\(tempModel)---数据")
+            }else {
+                
+            }
+        }
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

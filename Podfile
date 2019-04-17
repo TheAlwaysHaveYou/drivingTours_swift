@@ -14,7 +14,6 @@ target 'driving_tour_swift' do
 	pod 'Alamofire'
   pod 'SnapKit'
   pod 'RxSwift'
-#        pod 'Kingfisher', '~> 4.2'
   pod 'Kingfisher'
 end
 

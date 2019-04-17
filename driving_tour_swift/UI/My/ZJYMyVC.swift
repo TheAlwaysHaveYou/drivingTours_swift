@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -32,8 +33,22 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
         
         self.setupUI()
         
-        HTTPRequestManager.postRequest(url: "http://118.190.206.2:19089/organization/queryValidThemeList", params: nil) { (response, result) in
-            
+//        HTTPRequestManager.postRequest(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (response , result) in
+//            if result {
+//                let temp = response as! DataResponse<Any>
+//
+//                let json = try? JSONSerialization.jsonObject(with: temp.data! , options: .mutableContainers)
+//                print("返回字典--\(json)")
+//
+//
+//                print(response)
+//            }else {
+//                print("报错啦----\(response)")
+//            }
+//        }
+        
+        HTTPRequestManager.originPost(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (response, result) in
+
         }
     }
     override func viewWillAppear(_ animated: Bool) {
