@@ -15,6 +15,14 @@ typealias RequestFinishHandler = (Any , Bool) -> Void
 class HTTPRequestManager {
     static let sharedInstance = HTTPRequestManager()
     private init() {}//防止调用init方法
+
+    //给Alamofire这是请求时间的一种方式，使用时直接sharedSessionManager.request..........
+    static let sharedSessionManager: Alamofire.SessionManager = {
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = 10
+        return Alamofire.SessionManager(configuration: configuration)
+    }()
+    //设置请求时间的第二种方式，使用原始的URLRequest设置， 然后Alamofire.reuest(urlreuest)
     
     //GET请求
     class func getRequest(url:String , params:[String : Any]? , finish:@escaping RequestFinishHandler) -> () {
@@ -29,13 +37,19 @@ class HTTPRequestManager {
     }
     //POST请求
     class func postRequest(url:String , params:[String : Any]? , finish:@escaping RequestFinishHandler) -> () {
-        
         let cmd = url[serverBaseURL(add: "").endIndex ..< url.endIndex]
         let dictionary = ["cmd":cmd,"version":app_Version,"token":GlobalManager.sharedInstance.loginModel?.token ?? "","params":params ?? ["":""]] as [String : Any]
-        Alamofire.request(url, method: .post, parameters: dictionary, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+
+//        let headers: HTTPHeaders = [
+//            "Authorization": "Basic VXNlcm5hbWU6UGFzc3dvcmQ=",
+//            "Content-Type": "application/json"
+//        ]
+
+        //发送json格式的参数 JSONEncoding.default
+        Alamofire.request(url, method: .post, parameters: dictionary, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.result {
             case .success(_):
-                finish(response , true)
+                finish(response.data! , true)
             case .failure(_):
                 finish(response.error?.localizedDescription ?? "网络请求出错" , false)
             }
@@ -48,7 +62,7 @@ class HTTPRequestManager {
         request.timeoutInterval = 30.0
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-       let cmd = url[serverBaseURL(add: "").endIndex ..< url.endIndex]
+        let cmd = url[serverBaseURL(add: "").endIndex ..< url.endIndex]
         let dictionary = ["cmd":cmd,"version":app_Version,"token":GlobalManager.sharedInstance.loginModel?.token ?? "","params":params ?? ["":""]] as [String : Any]
         
         do {

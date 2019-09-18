@@ -24,16 +24,26 @@ class ZJYHomeVC: ZJYBaseViewController {
         
         self.title = "首页"
         
-        HTTPRequestManager.originPost(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (data, result) in
+//        HTTPRequestManager.originPost(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (data, result) in
+//            if result {
+//                let tempModel = try? JSONDecoder().decode(ZJYHomeADModel.self, from: data as! Data)
+//                print("\(String(describing: tempModel))---数据")
+//            }else {
+//
+//            }
+//        }
+        HTTPRequestManager.postRequest(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (data , result) in
             if result {
-                let data = data as! Data
-                let tempModel = try? JSONDecoder().decode(ZJYHomeADModel.self, from: data)
-                print("\(tempModel)---数据")
-            }else {
+//                let tempModel = try? JSONDecoder().decode(ZJYHomeADModel.self, from: data as! Data)
+//                print("\(String(describing: tempModel))---数据")
+                let json = try? JSONSerialization.jsonObject(with: data as! Data, options: .mutableContainers) as? [String : Any]
                 
+                print("返回字典--\(json)")
+                
+            }else {
+                print("报错啦----\(data)")
             }
         }
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

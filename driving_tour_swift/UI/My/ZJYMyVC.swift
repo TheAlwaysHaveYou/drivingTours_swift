@@ -46,10 +46,6 @@ class ZJYMyVC: ZJYBaseViewController,UITableViewDelegate,UITableViewDataSource {
 //                print("报错啦----\(response)")
 //            }
 //        }
-        
-        HTTPRequestManager.originPost(url: serverBaseURL(add: "organization/queryAdList"), params: nil) { (response, result) in
-
-        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
