@@ -72,6 +72,10 @@ class HTTPRequestManager {
             print("----JSONSerialization编码错误\(error)----")
         }
         //do catch 或者 try? try! 都行，但是有区别
+        /*
+         如果在 try? 语句中抛出一个错误，则表达式的值为 nil
+         如果在 try! 抛出一个异常，则会导致运行时错误；否则获取返回值
+         */
 //        let body = try? JSONSerialization.data(withJSONObject: params ?? ["":""], options: JSONSerialization.WritingOptions.prettyPrinted)
 //        request.httpBody = body
         

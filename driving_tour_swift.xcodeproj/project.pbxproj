@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180C29C3238F5CE0000AE34A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C29C2238F5CE0000AE34A /* Bundle+Extension.swift */; };
 		3101D814224DB37700B8F783 /* ZJYMyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101D813224DB37700B8F783 /* ZJYMyHeaderView.swift */; };
 		3101D816224E06EC00B8F783 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101D815224E06EC00B8F783 /* UIButton+Extension.swift */; };
 		31233A432251E97E002DBAB9 /* ZJYPersonalInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233A422251E97E002DBAB9 /* ZJYPersonalInfoModel.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180C29C2238F5CE0000AE34A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		3101D813224DB37700B8F783 /* ZJYMyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYMyHeaderView.swift; sourceTree = "<group>"; };
 		3101D815224E06EC00B8F783 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		31233A422251E97E002DBAB9 /* ZJYPersonalInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJYPersonalInfoModel.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				3101D815224E06EC00B8F783 /* UIButton+Extension.swift */,
+				180C29C2238F5CE0000AE34A /* Bundle+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				31233A492251EF9F002DBAB9 /* ZJYRegistVC.swift in Sources */,
 				31233A472251EF78002DBAB9 /* ZJYLoginVC.swift in Sources */,
 				31B10D442249FF710027338A /* ZJYFindVC.swift in Sources */,
+				180C29C3238F5CE0000AE34A /* Bundle+Extension.swift in Sources */,
 				314585FA2254B9780039272E /* ZJYLoginModel.swift in Sources */,
 				314585EF225498DC0039272E /* ZJYMyVipCenterVC.swift in Sources */,
 				31B10D332249F9580027338A /* KConstantDefine.swift in Sources */,
